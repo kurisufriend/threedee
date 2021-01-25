@@ -19,7 +19,7 @@ int main(int argc, char** argv)
 	surface = SDL_GetWindowSurface(window);
 	SDL_Event eventHandler;
 
-	global::entList.push_back(square(200, 200, 50, 50));
+	global::entList.push_back(square(200, 200, 50));
 
 	while (global::running)
 	{

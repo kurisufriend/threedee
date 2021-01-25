@@ -1,25 +1,28 @@
 #pragma once
 #include "SDL.h"
 
-struct square
+#include "vector2.h"
+/*
+squares are the basic 2D entity
+*/
+struct square : public vector2
 {
-	SDL_Rect rect;
+	int radius;
 	square()
 	{
-		rect.x = 0;
-		rect.y = 0;
-		rect.w = 0;
-		rect.h = 0;
+		this->x = 0;
+		this->y = 0;
+		this->radius = 0;
 	}
-	square(int x_, int y_, int w_, int h_)
+	square(int x_, int y_, int radius_)
 	{
-		rect.x = x_;
-		rect.y = y_;
-		rect.w = w_;
-		rect.h = h_;
+		this->x = x_;
+		this->y = y_;
+		this->radius = radius_;
 	}
 	void run(SDL_Surface* surface)
 	{
-		SDL_FillRect(surface, &this->rect, SDL_MapRGB(surface->format, 0xFF, 0xFF, 0xFF));
+		SDL_Rect rect{ this->x, this->y, this->radius, this->radius };
+		SDL_FillRect(surface, &rect, SDL_MapRGB(surface->format, 0xFF, 0xFF, 0xFF));
 	}
 };
