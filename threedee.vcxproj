@@ -241,10 +241,12 @@
     <ClInclude Include="sdl\include\SDL_video.h" />
     <ClInclude Include="sdl\include\SDL_vulkan.h" />
     <ClInclude Include="stuff\callbacks\callbacks.h" />
+    <ClInclude Include="stuff\objects\camera.h" />
     <ClInclude Include="stuff\objects\entityList3D.h" />
     <ClInclude Include="stuff\globals\globals.h" />
     <ClInclude Include="stuff\objects\cube.h" />
     <ClInclude Include="stuff\objects\entityList2D.h" />
+    <ClInclude Include="stuff\objects\ray2D.h" />
     <ClInclude Include="stuff\objects\square.h" />
     <ClInclude Include="stuff\objects\vector2.h" />
     <ClInclude Include="stuff\objects\vector3.h" />

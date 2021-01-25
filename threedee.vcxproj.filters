@@ -297,6 +297,12 @@
     <ClInclude Include="stuff\objects\entityList3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="stuff\objects\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stuff\objects\ray2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

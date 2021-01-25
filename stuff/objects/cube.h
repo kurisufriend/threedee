@@ -16,7 +16,7 @@ struct cube : public square
 	}
 	void run(SDL_Surface* surface)
 	{
-		SDL_Rect rect{ this->x, this->y, this->radius, this->radius };
-		SDL_FillRect(surface, &rect, SDL_MapRGB(surface->format, 0xFF, 0xFF, 0xFF));
+		//SDL_Rect rect{ this->x, this->y, this->radius, this->radius };
+		//SDL_FillRect(surface, &rect, SDL_MapRGB(surface->format, 0xFF, 0xFF, 0xFF));
 	}
 };
