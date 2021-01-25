@@ -242,6 +242,8 @@
     <ClInclude Include="sdl\include\SDL_vulkan.h" />
     <ClInclude Include="stuff\callbacks\callbacks.h" />
     <ClInclude Include="stuff\globals\globals.h" />
+    <ClInclude Include="stuff\objects\entityList.h" />
+    <ClInclude Include="stuff\objects\square.h" />
     <ClInclude Include="stuff\objects\vector2.h" />
     <ClInclude Include="stuff\objects\vector.h" />
   </ItemGroup>

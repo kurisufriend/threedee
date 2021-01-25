@@ -7,6 +7,7 @@
 
 #include "stuff/globals/globals.h"
 #include "stuff/callbacks/callbacks.h"
+#include "stuff/objects/square.h"
 
 int main(int argc, char** argv)
 {
@@ -16,14 +17,15 @@ int main(int argc, char** argv)
 	SDL_Init(SDL_INIT_VIDEO);
 	window = SDL_CreateWindow("threedee", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1280, 720, SDL_WINDOW_SHOWN);
 	surface = SDL_GetWindowSurface(window);
-
 	SDL_Event eventHandler;
+
+	global::entList.push_back(square(200, 200, 50, 50));
 
 	while (global::running)
 	{
 		callbacks::handleCallbacks(&eventHandler);
-		SDL_Rect cursor{ global::mousePos.x, global::mousePos.y, 5, 5 };
-		SDL_FillRect(surface, &cursor, SDL_MapRGB(surface->format, 0xFF, 0xFF, 0xFF));
+
+		global::entList.run(surface);
 
 		SDL_UpdateWindowSurface(window);
 		SDL_Delay(1);
