@@ -273,9 +273,27 @@
     <ClInclude Include="sdl\include\SDL_vulkan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="stuff\objects\vector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stuff\objects\vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stuff\globals\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stuff\callbacks\callbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stuff\callbacks\callbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stuff\globals\globals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

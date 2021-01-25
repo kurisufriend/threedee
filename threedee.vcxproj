@@ -240,9 +240,15 @@
     <ClInclude Include="sdl\include\SDL_version.h" />
     <ClInclude Include="sdl\include\SDL_video.h" />
     <ClInclude Include="sdl\include\SDL_vulkan.h" />
+    <ClInclude Include="stuff\callbacks\callbacks.h" />
+    <ClInclude Include="stuff\globals\globals.h" />
+    <ClInclude Include="stuff\objects\vector2.h" />
+    <ClInclude Include="stuff\objects\vector.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="stuff\callbacks\callbacks.cpp" />
+    <ClCompile Include="stuff\globals\globals.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
