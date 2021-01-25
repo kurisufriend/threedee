@@ -276,9 +276,6 @@
     <ClInclude Include="stuff\objects\vector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stuff\objects\vector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="stuff\globals\globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -288,7 +285,16 @@
     <ClInclude Include="stuff\objects\square.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stuff\objects\entityList.h">
+    <ClInclude Include="stuff\objects\cube.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stuff\objects\vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stuff\objects\entityList2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stuff\objects\entityList3D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

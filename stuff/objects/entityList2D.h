@@ -3,8 +3,10 @@
 #include "SDL.h"
 
 #include "square.h"
-
-class entityList : public std::vector<square>
+/*
+entityList2D is the 2D entity container class
+*/
+class entityList2D : public std::vector<square>
 {
 public:
 	void run(SDL_Surface* surface)

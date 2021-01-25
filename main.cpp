@@ -3,7 +3,7 @@
 #include "SDL.h"
 
 #include "stuff/objects/vector2.h"
-#include "stuff/objects/vector.h"
+#include "stuff/objects/vector3.h"
 
 #include "stuff/globals/globals.h"
 #include "stuff/callbacks/callbacks.h"

@@ -2,4 +2,4 @@
 
 bool global::running = true;
 vector2 global::mousePos;
-entityList global::entList;
+entityList2D global::entList;

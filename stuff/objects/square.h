@@ -8,16 +8,12 @@ squares are the basic 2D entity
 struct square : public vector2
 {
 	int radius;
-	square()
+	square() : vector2()
 	{
-		this->x = 0;
-		this->y = 0;
 		this->radius = 0;
 	}
-	square(int x_, int y_, int radius_)
+	square(float x_, float y_, int radius_) : vector2(x_, y_)
 	{
-		this->x = x_;
-		this->y = y_;
 		this->radius = radius_;
 	}
 	void run(SDL_Surface* surface)

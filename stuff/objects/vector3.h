@@ -1,18 +1,18 @@
 #pragma once
 #include "vector2.h"
 /*
-vectors extend vector2s and hold 3D cartesian coordinates
+vector3s extend vector2s and hold 3D cartesian coordinates
 */
-struct vector : public vector2
+struct vector3 : public vector2
 {
 	float z;
-	vector()
+	vector3()
 	{
 		this->x = 0.f;
 		this->y = 0.f;
 		this->z = 0.f;
 	}
-	vector(float x_, float y_, float z_)
+	vector3(float x_, float y_, float z_)
 	{
 		this->x = x_;
 		this->y = y_;
