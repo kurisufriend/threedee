@@ -33,8 +33,11 @@ struct ray2D
 				}
 			}
 			ray.dist = start.distance(point);
-			if (ray.dist > 1000)
+			if (ray.dist > 1500)
+			{
+				ray.dist = -1;
 				break;
+			}
 			point.x += direction.x;
 			point.y += direction.y;
 		}
