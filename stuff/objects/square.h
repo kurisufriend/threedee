@@ -2,6 +2,7 @@
 #include "SDL.h"
 
 #include "vector2.h"
+#include "argb.h"
 /*
 squares are the basic 2D entity
 */
@@ -18,6 +19,7 @@ struct square : public vector2
 	}
 	void run(SDL_Renderer* renderer)
 	{
+		SETRENDER_WHITE;
 		SDL_Rect rect{ this->x, this->y, this->radius, this->radius };
 		SDL_RenderFillRect(renderer, &rect);
 	}

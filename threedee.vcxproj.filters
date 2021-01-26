@@ -303,6 +303,12 @@
     <ClInclude Include="stuff\objects\ray2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="stuff\objects\argb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="demo\demo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -312,6 +318,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stuff\globals\globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="demo\demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

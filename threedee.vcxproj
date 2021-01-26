@@ -154,6 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="demo\demo.h" />
     <ClInclude Include="sdl\include\begin_code.h" />
     <ClInclude Include="sdl\include\close_code.h" />
     <ClInclude Include="sdl\include\SDL.h" />
@@ -241,6 +242,7 @@
     <ClInclude Include="sdl\include\SDL_video.h" />
     <ClInclude Include="sdl\include\SDL_vulkan.h" />
     <ClInclude Include="stuff\callbacks\callbacks.h" />
+    <ClInclude Include="stuff\objects\argb.h" />
     <ClInclude Include="stuff\objects\camera.h" />
     <ClInclude Include="stuff\objects\entityList3D.h" />
     <ClInclude Include="stuff\globals\globals.h" />
@@ -252,6 +254,7 @@
     <ClInclude Include="stuff\objects\vector3.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="demo\demo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stuff\callbacks\callbacks.cpp" />
     <ClCompile Include="stuff\globals\globals.cpp" />

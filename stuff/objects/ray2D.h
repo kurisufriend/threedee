@@ -1,13 +1,8 @@
 #pragma once
+#include <numeric>
 #include "../globals/globals.h"
 
 #include "vector2.h"
-
-//temp
-bool inRect(vector2 point, vector2 a, vector2 b)
-{
-	return (point.x > a.x && point.y > a.y && point.x < b.x && point.y < b.y);
-}
 
 struct ray2D
 {
@@ -44,5 +39,10 @@ struct ray2D
 			point.y += direction.y;
 		}
 		return ray;
+	}
+	//temp
+	static bool inRect(vector2 point, vector2 a, vector2 b)
+	{
+		return (point.x > a.x && point.y > a.y && point.x < b.x&& point.y < b.y);
 	}
 };
