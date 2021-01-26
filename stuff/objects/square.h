@@ -16,9 +16,9 @@ struct square : public vector2
 	{
 		this->radius = radius_;
 	}
-	void run(SDL_Surface* surface)
+	void run(SDL_Renderer* renderer)
 	{
 		SDL_Rect rect{ this->x, this->y, this->radius, this->radius };
-		SDL_FillRect(surface, &rect, SDL_MapRGB(surface->format, 0xFF, 0xFF, 0xFF));
+		SDL_RenderFillRect(renderer, &rect);
 	}
 };

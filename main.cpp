@@ -32,18 +32,17 @@ int main(int argc, char** argv)
 	{
 		callbacks::handleCallbacks(&eventHandler);
 
-		//SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 0, 0, 0));
+		ray2D ray = ray2D::trace(vector2(0, 201), vector2(.01, 0));
+		ray2D ray2 = ray2D::trace(vector2(201, 0), vector2(0, .01));
 
-		ray2D ray = ray2D::trace(vector2(0, 200), vector2(1, 0));
-		//SDL_RenderClear(renderer);
 		SDL_RenderDrawLine(renderer, ray.start.x, ray.start.y, ray.end.x, ray.end.y);
+		SDL_RenderDrawLine(renderer, ray2.start.x, ray2.start.y, ray2.end.x, ray2.end.y);
+
+
+		global::entList.run(renderer);
+		global::entList3D.run(renderer);
+
 		SDL_RenderPresent(renderer);
-
-
-		//global::entList.run(surface);
-		//global::entList3D.run(surface);
-
-		//SDL_UpdateWindowSurface(window);
 		SDL_Delay(1);
 	}
 	SDL_DestroyWindow(window);

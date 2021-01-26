@@ -23,7 +23,7 @@ struct ray2D
 		{
 			for (square object : global::entList)
 			{
-				if (inRect(point, vector2(object.x - (object.radius / 2), object.y - (object.radius / 2)), vector2(object.x + (object.radius / 2), object.y + (object.radius / 2))))
+				if (inRect(point, vector2(object.x, object.y), vector2(object.x + object.radius, object.y + object.radius)))
 				{
 					ray.start = start;
 					ray.end = point;
