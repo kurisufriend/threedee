@@ -32,12 +32,14 @@ int main(int argc, char** argv)
 	{
 		callbacks::handleCallbacks(&eventHandler);
 
+		SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
+		SDL_RenderFillRect(renderer, NULL);
+		SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 		ray2D ray = ray2D::trace(vector2(0, 201), vector2(.01, 0));
 		ray2D ray2 = ray2D::trace(vector2(201, 0), vector2(0, .01));
 
 		SDL_RenderDrawLine(renderer, ray.start.x, ray.start.y, ray.end.x, ray.end.y);
 		SDL_RenderDrawLine(renderer, ray2.start.x, ray2.start.y, ray2.end.x, ray2.end.y);
-
 
 		global::entList.run(renderer);
 		global::entList3D.run(renderer);

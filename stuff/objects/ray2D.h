@@ -16,7 +16,7 @@ struct ray2D
 	float dist;
 	static ray2D trace(vector2 start, vector2 direction)
 	{
-		ray2D ray { start, start, 19 };
+		ray2D ray { start, start, -1 };
 		vector2 point = start;
 		bool hit = false;
 		while (!hit)
@@ -27,11 +27,14 @@ struct ray2D
 				{
 					ray.start = start;
 					ray.end = point;
-					ray.dist = 19;
+					ray.dist = start.distance(point);
 					hit = true;
 					break;
 				}
 			}
+			ray.dist = start.distance(point);
+			if (ray.dist > 1000)
+				break;
 			point.x += direction.x;
 			point.y += direction.y;
 		}
