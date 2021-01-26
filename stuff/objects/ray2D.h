@@ -14,6 +14,7 @@ struct ray2D
 	vector2 start;
 	vector2 end;
 	float dist;
+	square* hitEnt;
 	static ray2D trace(vector2 start, vector2 direction)
 	{
 		ray2D ray { start, start, -1 };
@@ -21,13 +22,14 @@ struct ray2D
 		bool hit = false;
 		while (!hit)
 		{
-			for (square object : global::entList)
+			for (square* object : global::entList)
 			{
-				if (inRect(point, vector2(object.x, object.y), vector2(object.x + object.radius, object.y + object.radius)))
+				if (inRect(point, vector2(object->x, object->y), vector2(object->x + object->radius, object->y + object->radius)))
 				{
 					ray.start = start;
 					ray.end = point;
 					ray.dist = start.distance(point);
+					ray.hitEnt = object;
 					hit = true;
 					break;
 				}
