@@ -18,8 +18,8 @@ int main(int argc, char** argv)
 	SETRENDER_WHITE;
 	SDL_Event eventHandler;
 
-	global::entList.push_back(&square(200, 200, 50));
-	//global::entList3D.push_back(&cube(200, 200, 200, 50));
+	//global::entList.push_back(&square(200, 200, 50));
+	global::entList3D.push_back(&cube(200, 200, 200, 50));
 
 	while (global::running)
 	{
