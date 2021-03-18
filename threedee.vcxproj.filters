@@ -309,6 +309,9 @@
     <ClInclude Include="demo\demo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="stuff\objects\ray3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

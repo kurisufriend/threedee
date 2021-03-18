@@ -16,7 +16,7 @@ struct cube : public square
 	}
 	void run(SDL_Renderer* renderer)
 	{
-		//SDL_Rect rect{ this->x, this->y, this->radius, this->radius };
+		SDL_Rect rect{ this->x, this->y, this->radius, this->radius};
 		//SDL_RenderFillRect(renderer, &rect);
 	}
 };

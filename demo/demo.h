@@ -7,6 +7,8 @@
 #include "../stuff/objects/vector2.h"
 #include "../stuff/objects/vector3.h"
 #include "../stuff/objects/ray2D.h"
+#include "../stuff/objects/ray3D.h"
+#include "../stuff/objects/camera.h"
 
 #include "../stuff/globals/globals.h"
 #include "../stuff/callbacks/callbacks.h"

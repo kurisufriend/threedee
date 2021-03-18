@@ -18,4 +18,13 @@ struct vector3 : public vector2
 		this->y = y_;
 		this->z = z_;
 	}
+	float length()
+	{
+		return sqrtf((x * x) + (y * y) + (z * z));
+	}
+	float distance(vector3& other)
+	{
+		vector3 dist = vector3(this->x - other.x, this->y - other.y, this->z - other.z);
+		return dist.length();
+	}
 };
